@@ -1,0 +1,64 @@
+#include"stdio.h"
+typedef struct node
+{
+    int info;
+    struct node *next;
+}*top,*peek,*temp;
+
+ node *create(node )
+   {
+        top->next=NULL;
+        top->info=NULL;
+   }
+
+ node *push(int data){
+     if(top==NULL)
+     {
+          top=(node)malloc(sizeof(node));
+          top->info=data;
+          top->next=top;
+     }
+          else
+          {
+            temp=top;
+            top=(node)malloc(sizeof(node));
+            
+                 
+          }
+ }
+ node *pop(node *p)
+        {
+            node *q;
+            q=p;
+            p=p->next;
+            free(q);
+            return(p);
+        }
+
+void main()
+{
+     int choice;
+
+
+    while (1)
+    {
+        printf("\nPerform operations on the stack:");
+        printf("\n1.Push the element\n2.Pop the element\n3.Show");
+        printf("\n\nEnter the choice: ");
+        scanf("%d", &choice);
+        switch (choice)
+        {
+        case 1:
+            push();
+            break;
+        case 2:
+            pop();
+            break;
+        case 3:
+            show();
+            break;
+        default:
+            printf("\nInvalid choice!!");
+        }
+}        
+}
