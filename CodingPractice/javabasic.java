@@ -1,7 +1,7 @@
 public class javabasic {  
     public static void main(String[] args) {  
-        String name = "sahil";
-        String name1 = "patel";
+        String name = "sahilll";
+        String name1 = "patelll";
         String newstr[] = name.split("");
         String newstr1[] = name1.split("");
         int count = 0;
